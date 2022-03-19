@@ -1,0 +1,1 @@
+strategy("simply moving average strategy") ema20 = ema(close, 20) ema50 = ema(close, 50) long = ema20 > ema50 short = ema20 < ema50 start=timestamp(2021,1,1,0.0) end=timestamp(2021,8,1,0,0)
